@@ -6,7 +6,7 @@
     <a-layout>
       <a-layout-header style="background: #fff; padding: 0" />
       <a-layout-content style="margin: 0 16px">
-        <ContentLayout />
+        <router-view></router-view>
       </a-layout-content>
       <a-layout-footer style="text-align: center">
         nicolaszorth ©2024 Created by zorth
@@ -16,7 +16,6 @@
 </template>
 <script lang="ts" setup>
 import SideBarLayout from '@/components/layout/SideBarLayout.vue';
-import ContentLayout from '@/components/layout/ContentLayout.vue'
 import { ref } from 'vue';
 const collapsed = ref<boolean>(false);
 </script>
